@@ -1,0 +1,71 @@
+/* Mini CSS Reset */
+article, html, body, form, section, p, div, label {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+
+/* Home Page Style */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+ h3 {
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   font-size: 22px;
+   color: #069;
+   text-shadow: 2px 2px 3px #999;
+ }
+
+#container {
+  width: 85%; /*the container size responds to the changes in size of browser window*/
+  background: #EEE;
+  margin: 0 auto;
+  padding: 15px 10px;
+}
+
+.size {
+  height: 150px;
+  border: 1px solid #999;
+  padding: 2px;
+}
+
+/*Main Navigation Styles */
+.mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #069;
+}
+
+.mainNav li {
+  float: left;
+}
+
+.mainNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainNav a:hover:not(.active){
+  background-color: #3CF;
+  color: #000;
+}
+
+.mainNav .active {
+  background-color: #4CAF50
+}
