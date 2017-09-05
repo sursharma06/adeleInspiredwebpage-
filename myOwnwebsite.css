@@ -34,15 +34,89 @@ h1 {
   padding: 15px 10px;
 }
 
+.clear {
+  clear: both;
+}
+
+.copy {
+  font-size: 12px;
+  padding-left: 15px;
+  float: right;
+}
+
+hr.rule {
+  padding: 0;
+  margin-top: 25px;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  width: 75%;
+}
+
+hr.rule:after {
+  content: open-quote;
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background-color: #EEE;
+}
+
+.highlight {
+  line-height: 20px;
+  background-color: #FF9;
+}
+
+.left {
+  float: left;
+  margin-right: 15px;
+}
+
+.right {
+  float: right;
+  margin-left: 15px;
+}
+
 .size {
   height: 150px;
   border: 1px solid #999;
   padding: 2px;
 }
 
+.standout {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #F00;
+  letter-spacing: 2px;
+  padding: 0 5px;
+}
+
+.terms {
+  line-height: 50px;
+  text-align: center;
+}
+
+.terms a {
+  color: #999;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: #069;
+}
+
+.textformat {
+  text-align: justify;
+  line-height: 1.2em;
+
+}
+
 /*Main Navigation Styles */
 .mainNav ul {
-  list-style-type: none;
+  list-style-type: none; /*taking the ul bullets away*/
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -63,9 +137,50 @@ h1 {
 
 .mainNav a:hover:not(.active){
   background-color: #3CF;
-  color: #000;
+  color: #000; /*the color that appears when you hover over the links*/
 }
 
 .mainNav .active {
   background-color: #4CAF50
+}
+
+/*Footer Navigation Styles */
+.footernav {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.footernav ul {
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.footernav ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+.footernav ul li a {
+  display: block;
+  color: black;
+  margin: 0 0 0 1px;
+  padding: 3px 30px;
+  text-decoration: none;
+}
+
+.footernav ul li a:hover {
+  background: #369;
+  border-radius: 5px;
+  color: #FFF;
 }
